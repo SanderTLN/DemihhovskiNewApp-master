@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemihhovskiNewApp.SliderStepper">
+    <ContentPage.Content>
+        <StackLayout Padding="12, 12, 12, 12">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Slider x:Name="Slider1" 
+                        Minimum="0" 
+                        Maximum="255" 
+                        Value="0" 
+                        ValueChanged="Slider1_ValueChanged" 
+                        BackgroundColor="red"
+                        HorizontalOptions="FillAndExpand"></Slider>
+                <Slider x:Name="Slider2" 
+                        Minimum="0" 
+                        Maximum="255" 
+                        Value="0" 
+                        ValueChanged="Slider2_ValueChanged"
+                        BackgroundColor="Green"
+                        HorizontalOptions="FillAndExpand"></Slider>
+                <Slider x:Name="Slider3" 
+                        Minimum="0" 
+                        Maximum="255" 
+                        Value="0" 
+                        ValueChanged="Slider3_ValueChanged" 
+                        BackgroundColor="Blue"
+                        HorizontalOptions="FillAndExpand"></Slider>
+            </StackLayout>
+            <Editor x:Name="Editor1" 
+                    VerticalOptions="FillAndExpand"></Editor>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemihhovskiNewApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#15F741" Padding="40" CornerRadius="50">
+            <Label Text="Hello my little friend!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="36"
+                   RotationX="30"
+                   FontAttributes="Bold"/>
+        </Frame>
+        <Label Text="You are the winner!"
+               FontSize="Title"
+               Padding="60,10,60,10"/>
+        <Label Text="This is your first App!"
+               FontSize="16"
+               Padding="30,0,30,0"/>
+        <Label FontSize="16"
+               Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn better than now! "/>
+                        <Span Text="Good site: google.com"
+                              FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>

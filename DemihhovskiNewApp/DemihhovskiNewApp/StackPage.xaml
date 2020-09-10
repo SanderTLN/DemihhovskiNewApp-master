@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemihhovskiNewApp.StackPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="lbl" 
+                   Text="This is button!"
+                VerticalOptions="Start"
+                HorizontalOptions="Center" 
+                   />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btn" 
+                    Text="Push me!" 
+                    BackgroundColor="#3152C0" 
+                    BorderColor="#0D808C" 
+                    BorderWidth="5"
+                    FontSize="Large"
+                    Clicked="btn_Clicked"
+                    HorizontalOptions="Start">
+                </Button>
+                <Button x:Name="btn1" 
+                    Text="Destroy!" 
+                    BackgroundColor="#820A0A" 
+                    BorderColor="#372323" 
+                    BorderWidth="5" 
+                    FontSize="Large" 
+                    Clicked="btn1_Clicked" 
+                    HorizontalOptions="EndAndExpand">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

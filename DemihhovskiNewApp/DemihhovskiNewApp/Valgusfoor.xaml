@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemihhovskiNewApp.Valgusfoor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame x:Name="pun" 
+                   BackgroundColor="#5A0000" 
+                   Padding="80"
+                   CornerRadius="90" 
+                   Margin="80,0">
+                <Label x:Name="punane" 
+                       Text="punane" 
+                       FontSize="Large"
+                       />
+            </Frame>
+            <Frame x:Name="kol" 
+                   BackgroundColor="#3F3F00" 
+                   Padding="80"
+                   CornerRadius="90" 
+                   Margin="80,0">
+                <Label x:Name="kollane" 
+                       Text="kollane"
+                       FontSize="Large"
+                       />
+            </Frame>
+            <Frame x:Name="roh" 
+                   BackgroundColor="#004100" 
+                   Padding="80"
+                   CornerRadius="90"
+                   Margin="80,0">
+                <Label x:Name="roheline" 
+                       Text="roheline"
+                       FontSize="Large"
+                       />
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="on" 
+                        Text="Sisse" 
+                        BackgroundColor="#56C14D"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="on_Clicked"
+                        />
+                <Button x:Name="off"
+                        Text="Välja"
+                        BackgroundColor="#D73131"
+                        HorizontalOptions="EndAndExpand"
+                        Clicked="off_Clicked"
+                        />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
